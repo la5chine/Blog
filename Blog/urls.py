@@ -5,6 +5,10 @@ from Blog.mysite import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
+router.register(r'blogs', views.BlogSerializerViewSet)
+router.register(r'sections', views.SectionSerializerViewSet)
+router.register(r'subjects', views.SubjectSerializerViewSet)
+router.register(r'subject_colors', views.SubjectColorSerializerViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
